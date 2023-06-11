@@ -3,20 +3,20 @@ import './App.css';
 
 const App = () => {
 
-  const [a, setA] = useState(0)
+  const [number, setNumber] = useState(0)
 
   const increament = () => {
-    setA ( a + 1 )
+    setNumber ( number + 1 )
   }
 
   const decreament = () => {
-    setA ( a - 1 )
+    setNumber ( number - 1 )
   }
 
   return (
     <div className='app'>
       <button onClick={increament}>+</button>
-      <p>{a}</p>
+      <p>{number}</p>
       <button onClick={decreament}>-</button>
     </div>
   )
